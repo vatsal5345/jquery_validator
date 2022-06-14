@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+
+  <link rel="stylesheet" href="../css/form_jquery_validatio_plugin.css">
+
+  <title>Form</title>
+
+</head>
+
+<body>
+  <form id="basic-form" action="" method="post">
+  <div class="container bg-blue">
+    <div class="page bg-light">
+      <form>
+        <div class="row">
+          <h1>Customer Detatils</h1>
+          <hr>
+        </div>
+        <div class="row">
+          <div class="col">
+            <input type="text" id="fname" name="fname" for="fname" class="form-input" value="">
+            <p id="OP1"></p>
+            <label for="fname">First Name</label>
+          </div>
+          <div class="col">
+            <input type="text" id="lname"  name="lname" class="form-input" value="">
+            <p id="OP2"></p>
+            <label for="fname">Last Name</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col"><br><br>
+            <p class="asterick">Address</p>
+            <input type="text" id="staddress" name="staddress" class="form-input" value="">
+            <label for="staddresss"></label>
+            <p id="OPa"></p>
+            <p>Street Address</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <input type="text" id="staddress2" name="staddress2" class="form-input" value="">
+            <label for="staddresss"></label>
+            <p id="OP3"></p>
+            <p>Street Address line 2</p>
+          </div>
+        </div><br><br>
+        <div class="row">
+          <div class="col">
+            <input type="text" id="city" name="city" class="form-input">
+            <label for="city"></label>
+            <p id="OP4"></p>
+            <p>City</p>
+          </div>
+          <div class="col">
+            <input type="text" id="state" name="state" class="form-input">
+            <label for="city"></label>
+            <p id="OP5"></p>
+            <p>State</p>
+          </div>
+        </div><br><br>
+        <div class="row">
+          <div class="col">
+            <input type="text" id="zipcode" name="zipcode" class="form-input">
+            <label for="zipcode"></label>
+            <p id="OP6"></p>
+            <p>Zip-code</p>
+          </div>
+        </div><br><br>
+        <div class="row">
+          <div class="col">
+            <p class="asterick">Phone Number</p>
+            <input type="tel" id="phone" name="phone" class="form-input" placeholder="(000) 0000-000">
+            <p id="OP7"></p>
+          </div>
+        </div><br><br>
+        <div class="row">
+          <div class="col">
+            <p>Email</p>
+            <input type="text" id="email" name="email" class="form-input" placeholder="ex:email@yahoo.com">
+            <label for="email"></label>
+            <p id="OP8"></p>
+            
+          </div><br><br>
+        </div><br><br><br>
+        <div class="row">
+          <div class="col">
+            <p>How did you here about us?</p>
+            <select name="foundus" id="foundus"  class="form-input">
+              <option value="magazine">Magazine</option>
+              <option value="newspaper">Newspaper</option>
+              <option value="social">Social-media</option>
+              <option value="friend">Friend</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div><br><br><br>
+        <div class="row">
+          <div class="col">
+            <p>Feedback about us</p>
+            <textarea class="form-input t_area" name="feedback" rows="7" id="feedback"></textarea>
+            <p id="OP9"></p>
+          </div>
+        </div>
+        <br><br><br>
+        <div class="row">
+          <div class="col">
+            <p>Suggestion for any further imporovement</p>
+            <textarea class="form-input t_area" rows="7" name="feedback2" id="suggestion"></textarea>
+            <p id="OP10"></p><br><br>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <label class="r_check">Will you be willing to recommand us ?? <input type="checkbox"
+              name="check"></label><br><br>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <label>Gender :</label>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="other">Other</label>
+            <input type="radio" id="other" name="gender" value="Other">
+            
+            
+          </div>
+            <p id="genderErr"> </p>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <table>
+              <form>
+                <tr>
+                  <th class="empty_row number"></th>
+                  <th>Full Name</th>
+                  <th>Address</th>
+                  <th>Phone Number</th>
+                </tr>
+                <tr>
+                  <td class="tfield">1</td>
+                  <td><input type="text" class="wtd"></td>
+                  <td><input type="text" class="wtd"></td>
+                  <td><input type="text" class="wtd"></td>
+                </tr>
+                <tr>
+                  <td class="tfield">2</td>
+                  <td><input type="text" class="wtd"></td>
+                  <td><input type="text" class="wtd"></td>
+                  <td><input type="text" class="wtd"></td>
+                </tr>
+              </form>
+            </table>
+          </div>
+        </div>
+        <br>
+
+        <input type="submit" id="submit" value="Submit" class="submit_class" onclick="validateForm()">
+      </form>
+
+    </div>
+  </div>
+  </form>
+  <script src="../jquery_validatio_plugin/form_jquery_validation_plugin.js"></script>
+</body>
+</html>
